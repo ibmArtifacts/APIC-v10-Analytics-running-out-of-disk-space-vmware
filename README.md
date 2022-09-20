@@ -30,3 +30,7 @@ kubectl get pods
 kubectl delete pod {name_of_storage-shared_pod}
 ```  
 
+6. Reboot the VM:  
+```
+shutdown -r now
+```  
