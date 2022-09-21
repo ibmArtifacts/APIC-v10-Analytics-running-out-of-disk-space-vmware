@@ -1,4 +1,4 @@
-# APIC-v10-Analytics-running-out-of-disk-space-vmware  
+# APIC-v10-Analytics-running-out-of-disk-space-vmware-resoluton  
 If the analytics have stopped logging and disk is filled up, here are instructions to release space.  
   
 **!!WARNING!! This will purge your analytics data. If you need to backup your analytics, please take a look at the "[Backing up and restoring the Analytics database on VMware](https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=later-backing-up-restoring-analytics-database-vmware)" documentation on IBM help, or contact IBM support.**  
