@@ -40,9 +40,12 @@ kubectl delete pod {name_of_storage-shared_pod}
 ```
 shutdown -r now
 ```  
+
+This will have to be completed for all the analytic subsystems in the cluster.
+
 *****  
 ### Post-Resolution validation  
-
+1. 
 
 
 
