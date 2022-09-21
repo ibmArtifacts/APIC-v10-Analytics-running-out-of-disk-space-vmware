@@ -1,4 +1,4 @@
-# APIC-v10-Analytics-running-out-of-disk-space-vmware-resoluton  
+# APIC v10 Analytics running out of disk space (VMware) resoluton  
 If the analytics have stopped logging due to the system disk being full, here are instructions to release space.  
 
 The error seen from this issue is "_Max Recommended Usage: 70% | Total disk used: ##%_" from a ``apic health-check`` command check on the Analytics subsystem.
