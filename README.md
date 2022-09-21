@@ -1,9 +1,13 @@
 # APIC-v10-Analytics-running-out-of-disk-space-vmware-resoluton  
 If the analytics have stopped logging due to the system disk being full, here are instructions to release space.  
+
+The error seen from this issue is "_Max Recommended Usage: 70% | Total disk used: ##%_" from a ``apic health-check`` command check on the Analytics subsystem.
+
 NOTE: Please always to double check whether new instructions are updated on the [IBM documention site](https://www.ibm.com/docs/en/api-connect) in addition to these instructions for enhanced handling of issues.
   
 **!!WARNING!! This will purge your analytics data. If you need to backup your analytics, please take a look at the "[Backing up and restoring the Analytics database on VMware](https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=later-backing-up-restoring-analytics-database-vmware)" documentation on IBM help, or contact IBM support.**  
 *****  
+
 ### Steps to clear space off each VM node  
 
 The follow steps assume that you are logged into the Analytics subsystem.
