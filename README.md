@@ -91,7 +91,7 @@ root@analytics:~# shutdown -r now
   kubectl describe node {node}
   ```  
 A sample of a healthy disbused system would only contain 1 client, ingestion, and mtls pod. 
-If there are more than 1, please use kubectl delete pod {pod_name} to delete 2 of the pods.  
+If there are more than 1, please use kubectl ``delete pods {pod_name}`` to delete 2 of the pods.  
   
 ![image](https://user-images.githubusercontent.com/66093865/191584797-e949584b-dceb-4dc8-ae8c-5536f6bf017f.png)  
 
