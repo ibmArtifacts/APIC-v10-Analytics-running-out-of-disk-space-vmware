@@ -22,7 +22,7 @@ find /data/secure/volumes -name "indices"
 
 2. Remove the indices folder:
 ```
-rm -rf PATH_OF_THE_INDICES_FIND
+rm -rf PATH_TO_INDICES_HERE
 ```  
 
 3. Restart the analytics:  
@@ -34,7 +34,7 @@ systemctl restart appliance-manager
 ```
 kubectl get pods
 
-kubectl delete pod {name_of_storage-shared_pod}
+kubectl delete pod NAME_OF_STORAGE_SHARED_POD_HERE
 ```  
 
 5. Reboot the VM:  
@@ -71,6 +71,10 @@ pod "analyt-nj-storage-shared-0" deleted
 root@analytics:~# shutdown -r now
 ```
 
+NOTICE: you have many evicted pods afterwards, you may clean them up with the following command:
+```  
+kubectl delete pod $(kubectl get pods | grep Evicted | awk '{print $1}')
+```  
 
 *****  
 ### Post-Resolution validation  
@@ -83,7 +87,7 @@ root@analytics:~# shutdown -r now
   kubectl get nodes
   {a list of nodes will output}
   
-  kubectl describe node {node}
+  kubectl describe node NODE_NAME_HERE
   ```  
 A sample of a healthy disbused system would only contain 1 client, ingestion, and mtls pod. 
 If there are more than 1, please use kubectl ``delete pods {pod_name}`` to delete 2 of the pods.  
