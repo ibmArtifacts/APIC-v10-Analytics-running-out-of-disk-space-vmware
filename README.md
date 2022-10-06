@@ -20,29 +20,24 @@ You will be applying the steps to each node of the subsystem (e.g. if in a clust
 find /data/secure/volumes -name "indices"
 ```  
 
-2. If output is ``/data/secure/volumes/vol1/nodes/0/indices`` then navigate to the parent directory of the indices as shown below:  
+2. Remove the indices folder:
 ```
-cd /data/secure/volumes/vol1/nodes/0
+rm -rf PATH_OF_THE_INDICES_FIND
 ```  
 
-3. Remove the indices folder:
-```
-rm -rf ./indices/
-```  
-
-4. Restart the analytics:  
+3. Restart the analytics:  
 ```
 systemctl restart appliance-manager
 ```  
 
-5. Refresh the analytics storage-shared pod:
+4. Refresh the analytics storage-shared pod:
 ```
 kubectl get pods
 
 kubectl delete pod {name_of_storage-shared_pod}
 ```  
 
-6. Reboot the VM:  
+5. Reboot the VM:  
 ```
 shutdown -r now
 ```  
